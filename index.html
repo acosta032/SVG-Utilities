@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SVG</title>
+</head>
+<body>
+    <!-- https://webdesign.tutsplus.com/svg-viewport-and-viewbox-for-beginners--cms-30844t 
+	https://www.youtube.com/watch?v=ZJSCl6XEdP8&list=PL4-IK0AVhVjP0EeV513_b30lhGRTfMbYd
+https://www.youtube.com/watch?v=gWai7fYp9PY-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">LOGO<img src="" alt="" class="logo_img"></div>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="" class="menu_link">Lorem</a>
+                </li>
+                <li class="menu_item">
+                    <a href="" class="menu_link">Lorem</a>
+                </li>
+                <li class="menu_item">
+                    <a href="" class="menu_link">Lorem</a>
+                </li>
+                <li class="menu_item">
+                    <a href="" class="menu_link">Lorem</a>
+                </li>
+                <li class="menu_item">
+                    <a href="" class="menu_link">Lorem</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero"></div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <article class="intro_text">
+                <h2 class="h2-text">SVG Utilities (Scalable Vector Graphics)</h2>
+                <p class="paragraph">
+                    SVG es un ESTANDAR web para para almacenar información de graficos vectoriales
+                    basando en XML.
+                    SVG usa etiquetas para guardar información de 
+                        <ul>
+                            <li>Formas</li>
+                            <li>coordenadas</li>
+                            <li>animaciones</li>
+                        </ul>
+                </p>
+            </article>
+        </section>
+        <section class="intro">
+            <p>
+                Un SVG se encierra dentro de las etiquetas <code> &lt;svg&gt; &lt;/svg&gt;</code>
+            </p>
+            <p>
+                Los atributos iniciales más comunes son:
+            </p>
+
+            <ul>
+                <li>
+                    <p><b>version:</b> Versión del estandar SVG de la W3C</p>
+                </li>
+                <li>
+                    <p><b>viewBox:</b> <i>[x-min | y-min | x | y ] </i></p>
+                    <p>Es la posición y la dimensión del lienzo relativo de las dimensiones Widht y Height</p>
+                    <strong>Si no se establece el lienzo es infinito</strong>
+                    <p>x-min | y-min : Coordenadas Top - Left </p>
+                    <p>x | y : Son las dimensiones entre (comunes 0 0 100 100(</p>
+                    
+                    <p>Este atributo se puede usar en otras etiquetas como:</p>
+                    <ul>
+                        <li>&lt;marker&gt;</li>
+                        <li>&lt;pattern&gt;</li>
+                        <li>&lt;symbol&gt;</li>
+                        <li>&lt;view&gt;</li>
+                        <li>&lt;svg&gt;</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <svg version="1.1" width="200" height="200" viewbox="25 25 50 50" xmlns="http://www.w3.org/2000/svg" fill="#555">
+                <circle cx="100%" cy="100%" r="25" fill="white" />
+            </svg>
+
+            <pre><code>
+                svg version="1.1"
+                width="100%"
+                viewbox="0 0 600 300"
+                xmlns="http://www.w3.org/2000/svg">
+                
+            </code></pre>
+
+
+        </section>
+        <section class="intro">
+            <p></p>
+        </section>
+    </main>
+</html>
